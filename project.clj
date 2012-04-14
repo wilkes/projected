@@ -8,7 +8,7 @@
                  [korma "0.3.0-beta7"]
                  [lobos "1.0.0-SNAPSHOT"]
                  [postgresql "9.1-901.jdbc4"]]
-  :dev-dependencies [[speclj "1.2.0"]]
+  :dev-dependencies [[speclj "2.1.1"]]
   :test-path "spec/"
   :plugins [[lein-cljsbuild "0.1.7"]]
   :source-path "src/clj"
