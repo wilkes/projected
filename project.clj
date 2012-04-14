@@ -7,7 +7,10 @@
                  [noir "1.3.0-beta2"]
                  [korma "0.3.0-beta7"]
                  [lobos "1.0.0-SNAPSHOT"]
-                 [postgresql "9.1-901.jdbc4"]]
+                 [postgresql "9.1-901.jdbc4"]
+                 [crate "0.1.0-alpha3"]
+                 [jayq "0.1.0-alpha3"]
+                 [fetch "0.1.0-alpha2"]]
   :dev-dependencies [[speclj "2.1.1"]]
   :test-path "spec/"
   :plugins [[lein-cljsbuild "0.1.7"]]
