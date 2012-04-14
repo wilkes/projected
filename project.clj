@@ -16,7 +16,7 @@
   :plugins [[lein-cljsbuild "0.1.7"]]
   :source-path "src/clj"
   :extra-classpath-dirs ["src/cljs"]
-  :hooks [leiningen.cljsbuild]
+;  :hooks [leiningen.cljsbuild]
   :cljsbuild {:builds
               [{:source-path "src/cljs"
                 :compiler {:output-to "resources/public/javascripts/main-debug.js"
