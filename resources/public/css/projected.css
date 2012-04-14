@@ -1,0 +1,17 @@
+body {
+    padding-top: 40px;
+}
+
+.ui-datepicker {
+    font-size: 0.75em;
+    padding-bottom: 10px;
+}
+
+.navbar .brand {
+    margin-left: 20px;
+    float: right;
+}
+
+#loading {
+    padding-top: 10px;
+}
