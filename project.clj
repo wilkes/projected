@@ -10,7 +10,8 @@
                  [postgresql "9.1-901.jdbc4"]
                  [crate "0.1.0-alpha3"]
                  [jayq "0.1.0-alpha3"]
-                 [fetch "0.1.0-alpha2"]]
+                 [fetch "0.1.0-alpha2"]
+                 [lamina "0.5.0-alpha1"]]
   :dev-dependencies [[speclj "2.1.1"]]
   :test-path "spec/"
   :plugins [[lein-cljsbuild "0.1.7"]]
