@@ -1,8 +1,13 @@
 (ns projected.dev-server
   (:use [noir.core :only (defpage)]
+        [korma.db :only (defdb postgres)]
         [projected.application-host :only (layout)])
   (:require [noir.response :as response]
             [noir.server :as server]))
+
+(defdb dev (postgres {:db "projected"
+                      :user "dev"
+                      :password ""}))
 
 (defpage "/" [] (response/redirect "/development"))
 (defpage "/development" [] (layout :development))
