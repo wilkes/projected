@@ -24,5 +24,5 @@
         (index [:aggregate_id]))))
 
 (defn drop-event-store []
-  (drop (table :eventlog))
+  (drop (table :eventlog))o
   (drop (table :aggregates)))

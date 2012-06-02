@@ -1,4 +1,4 @@
-(ns projected.event-bus
+(ns projected.support.event-bus
   (require [lamina.core :as lamina]))
 
 (defprotocol EventBus

@@ -3,21 +3,23 @@
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :dependencies [[org.clojure/clojure "1.4.0-beta3"]
-                 [noir "1.3.0-beta2"]
+  :dependencies [[org.clojure/clojure "1.4.0"]
+                 [noir "1.3.0-beta7"
+                  :exclusions [org.clojure/clojure]]
                  [korma "0.3.0-beta7"]
                  [lobos "1.0.0-SNAPSHOT"]
                  [postgresql "9.1-901.jdbc4"]
-                 [crate "0.1.0-alpha3"]
-                 [jayq "0.1.0-alpha3"]
+                 [crate "0.2.0-alpha2"]
+                 [jayq "0.1.0-alpha4"]
                  [fetch "0.1.0-alpha2"]
+                 [waltz "0.1.0-alpha1"]
                  [lamina "0.5.0-alpha1"]]
-  :dev-dependencies [[speclj "2.1.1"]]
-  :test-path "spec/"
-  :plugins [[lein-cljsbuild "0.1.7"]]
-  :source-path "src/clj"
-  :extra-classpath-dirs ["src/cljs"]
-;  :hooks [leiningen.cljsbuild]
+  :profiles {:dev {:resource-paths ["resources"
+                                    "dummy-data"]
+                   :dependencies [[speclj "2.1.2"]]}}
+  :test-paths ["spec/"]
+  :plugins [[lein-cljsbuild "0.1.8"]]
+  :source-paths ["src/clj" "src/cljs"]
   :cljsbuild {:builds
               [{:source-path "src/cljs"
                 :compiler {:output-to "resources/public/javascripts/main-debug.js"
